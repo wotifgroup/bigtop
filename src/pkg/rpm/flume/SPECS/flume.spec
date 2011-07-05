@@ -54,7 +54,7 @@ Requires: sh-utils, textutils, /usr/sbin/useradd, /sbin/chkconfig, /sbin/service
 %if 0%{?rhel} == 6
 Requires: java-1.6.0-sun
 %else
-Requires: jre >= 1.6
+Requires: jdk >= 1.6
 %endif
 
 
@@ -74,7 +74,7 @@ Requires(preun): /sbin/service, /sbin/chkconfig, %{name}
 %if 0%{?rhel} == 6
 Requires: java-1.6.0-sun
 %else
-Requires: jre >= 1.6
+Requires: jdk >= 1.6
 %endif
 
 %if  %{?suse_version:1}0
@@ -102,7 +102,7 @@ Requires(preun): /sbin/service, /sbin/chkconfig, %{name}
 %if 0%{?rhel} == 6
 Requires: java-1.6.0-sun
 %else
-Requires: jre >= 1.6
+Requires: jdk >= 1.6
 %endif
 
 %if  %{?suse_version:1}0
